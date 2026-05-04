@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_text">primary</color>
+    <color name="correct_green">green</color>
+    <color name="secondary_text">secondary</color>
+    <color name="divider">divider</color>
+    <color name="button_neutral">neutral</color>
+    <color name="incorrect_red">incorrect_red</color>
+</resources>
