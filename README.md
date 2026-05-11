@@ -1,11 +1,8 @@
-# Assignment2
-#  Life Hack or Urban Myth? - Flashcard Quiz App
-https://youtube.com/shorts/sIoGu_4piHw?si=nJeRMeF6YVTkNkGq
 ## 📱 Project Overview
 
-**Life Hack or Urban Myth?** is an interactive Android quiz application that helps users distinguish between genuine life hacks and common urban myths. The app presents 8 questions where users must decide if a statement is a real life hack or just a myth, providing immediate feedback and explanations.
+**Life Hack or Urban Myth?** is an interactive Android quiz application that helps users distinguish between genuine life hacks and common urban myths. The app presents questions where users must decide if a statement is a real life hack or just a myth, providing immediate feedback and explanations.
 
-### Purpose
+## 🎯 Purpose
 
 In today's digital age, misinformation spreads rapidly. This app aims to:
 - Educate users about common misconceptions
@@ -15,66 +12,62 @@ In today's digital age, misinformation spreads rapidly. This app aims to:
 
 ---
 
-##  Features Implemented
+## 📸 Screenshots
+ <img width="1170" height="2532" alt="IMG_3288" src="https://github.com/user-attachments/assets/76d97331-a701-4475-a590-45034fd30e6e" />
+<img width="1170" height="2532" alt="IMG_3289" src="https://github.com/user-attachments/assets/10611e60-591f-4ef4-90ac-d40e36da7dd8" />
+<img width="1170" height="2532" alt="IMG_3290" src="https://github.com/user-attachments/assets/8aafc37e-f3ac-411d-b8bf-71b4b3960462" />
+<img width="1170" height="2532" alt="IMG_3291" src="https://github.com/user-attachments/assets/350ec4f3-84d9-42e3-b135-d036c9b49fd1" />
 
-### 1. Welcome Screen
-- Friendly welcome message greeting users as "Truth Seeker"
-- Clear description of the app's purpose
-- Visual appeal with emoji and centered layout
-- "START QUIZ" button to begin the game
-
-### 2. Quiz Screen
-- Displays 8 carefully curated questions one at a time
-- Two answer options: **HACK (TRUE)** and **MYTH (FALSE)**
-- Progress indicator showing current question number
-- Immediate feedback after each answer with explanation
-- Visual highlighting (green for correct, red for incorrect)
-- Next button navigation (disabled until answer is selected)
-
-### 3. Score & Review Screen (Combined)
-- Displays total score out of 8 in large, clear format
-- Personalised feedback based on score:
-  - **75%+** : "MASTER HACKER!" - Excellent work!
-  - **50-74%** : "GOOD JOB!" - Getting there!
-  - **Below 50%** : "STAY SAFE ONLINE!" - Keep learning!
-- Review button toggles visibility of all questions
-- Shows correct answer (HACK or MYTH) for each question
-- Includes explanations to help users learn
-- "PLAY AGAIN" button to restart the quiz
 
 ---
 
-##  Question Bank
+## ✨ Features Implemented
+
+### 1. Quiz Screen
+- Displays questions one at a time
+- Two answer options: **HACK (TRUE)** and **MYTH (FALSE)**
+- Immediate feedback after each answer with explanation
+- Shows correct/incorrect status with emoji feedback (✓/✗)
+- "Next" button navigation
+
+### 2. Score Screen
+- Displays total score (e.g., 2/5)
+- Personalised feedback message based on performance
+- "Review" button to see all questions and answers
+
+### 3. Review Screen
+- Shows all questions with correct answers marked
+- Displays "Hack" or "Myth" designation for each statement
+- Helps users learn from their mistakes
+
+---
+
+## 📋 Question Bank
 
 | # | Statement | Answer | Explanation |
 |---|-----------|--------|-------------|
-| 1 | Putting a spoon in an open champagne bottle will keep it bubbly longer | MYTH | The spoon does nothing to preserve carbonation |
-| 2 | Drinking a glass of water first thing in the morning boosts your metabolism | HACK | Helps kickstart your metabolism after sleep |
-| 3 | You should wait an hour after eating before swimming | MYTH | Not medically necessary |
-| 4 | Using your phone while charging damages the battery | MYTH | Modern devices have safety circuits |
-| 5 | Putting a wet phone in rice helps dry it out | MYTH | Air drying or silica gel works better |
-| 6 | Turning your thermostat down when away saves energy | HACK | Reduces energy costs by 10-15% |
-| 7 | Cracking your knuckles causes arthritis | MYTH | No scientific proof of link |
-| 8 | Using the two-minute rule improves productivity | HACK | Proven productivity technique |
+| 1 | You should drink at least 8 glasses of water every day no matter what | **MYTH** | Water needs depend on your body, activity and environment |
+| 2 | Multitasking helps you get more work done efficiently | **HACK** | (Users learn correct answer) |
+| 3 | Taking short breaks while studying improves focus | **MYTH** | (Users learn correct answer) |
+| 4 | Cracking your knuckles causes arthritis | **HACK** | (Users learn correct answer) |
+| 5 | Using dark mode on your phone always saves battery life | **MYTH** | (Users learn correct answer) |
 
 ---
 
 ## 🏗️ App Architecture
-
 LifeHackQuizApp/
 ├── app/
 │ ├── src/main/java/com/example/lifehackquiz/
 │ │ ├── MainActivity.kt # Welcome screen
 │ │ ├── QuizActivity.kt # Quiz logic & questions
-│ │ └── ScoreAndReviewActivity.kt # Results & review
+│ │ ├── ScoreActivity.kt # Results display
+│ │ └── ReviewActivity.kt # Review all answers
 │ └── src/main/res/
 │ ├── layout/
 │ │ ├── activity_main.xml
 │ │ ├── activity_quiz.xml
-│ │ └── activity_score_and_review.xml
-│ ├── drawable/
-│ │ ├── welcome_background.xml
-│ │ └── review_card_background.xml
+│ │ ├── activity_score.xml
+│ │ └── activity_review.xml
 │ └── values/
 │ ├── colors.xml
 │ └── strings.xml
@@ -93,8 +86,7 @@ text
 | **Kotlin** | Primary programming language |
 | **Android SDK** | Mobile development framework |
 | **XML** | UI layout design |
-| **CardView** | Styled question cards |
-| **Intents** | Screen navigation |
+| **Intents** | Screen navigation between activities |
 | **GitHub Actions** | Automated builds and testing |
 
 ---
@@ -106,13 +98,106 @@ text
 - JDK 17 or higher
 - Android SDK API 24+
 
-git hub link https://github.com/SaneleDlamini77/Assignment2/edit/main/README.md
-youtube video: https://youtu.be/doS5fzOh4El?si=kb0W8wGli6K369
-References
+### Steps to Run
 
-Wangereka, H. (2024) Mastering Kotlin for Android 14: build powerful Android apps from scratch using Jetpack libraries and Jetpack Compose. Birmingham: Packt Publishing. 
-Wangereka, H. (2024) Mastering Kotlin for Android 14: build powerful Android apps from scratch using Jetpack libraries and Jetpack Compose. Birmingham: Packt Publishing. 
-Google Developers (2024) Android Developer Documentation: Activities and Intents. Available at: https://developer.android.com/guide/components/activities/intro-activities 
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/LifeHackQuiz.git
+cd LifeHackQuiz
+Open in Android Studio
 
+Select "Open an Existing Project"
 
+Navigate to the cloned folder
 
+Sync Gradle Files
+
+Click "Sync Now" when prompted
+
+Run the App
+
+Connect an Android device or start an emulator
+
+Click the green "Run" button (▶)
+
+Direct APK Installation
+Download the latest APK from the Actions tab in GitHub → Select workflow → Download "app-debug" artifact
+
+🎮 How to Play
+Read the statement displayed on screen
+
+Choose your answer - Tap "HACK (TRUE)" if you think it's a real life hack, or "MYTH (FALSE)" if you think it's fake
+
+View feedback - Immediate explanation appears with ✓ or ✗ emoji
+
+Tap Next - Move to the next question
+
+Complete all questions - See your final score
+
+Review answers - Tap review button to see all correct answers
+
+Play again - Restart the quiz anytime
+
+📊 Scoring & Feedback
+Performance	Message
+High Score	"Excellent! You're a true life hack expert!"
+Medium Score	"Good job! Keep learning!"
+Low Score	"Keep practicing! You can do better."
+🧪 Testing & GitHub Actions
+Automated Testing
+The project uses GitHub Actions for continuous integration:
+
+yaml
+Triggers:
+  - Push to main/master branch
+  - Pull requests
+  - Manual workflow dispatch
+
+Jobs:
+  - Build with JDK 17
+  - Run Gradle tests
+  - Generate debug APK
+  - Upload APK as artifact
+Manual Testing Performed
+App launches without crashing
+
+Navigation between all screens works
+
+Score calculation is accurate
+
+Feedback displays correctly with emojis
+
+Review screen shows all questions and correct answers
+
+Play again/restart functionality
+
+🎨 UI Design Features
+Emoji feedback - ✓ for correct, ✗ for incorrect answers
+
+Clear visual distinction between Hack and Myth buttons
+
+Progress tracking throughout the quiz
+
+Clean, readable typography
+
+Consistent color scheme throughout the app
+
+👨‍💻 Developer Information
+Field	Information
+Module Name	Introduction to Mobile Application Development
+Module Code	IMAD5112/p/w
+Assignment	Assignment 2
+Student Name	Sanele Dlamini
+Student Number	ST10172088
+📹 Video Demonstration
+A video demonstration of the app showing all features: https://youtube.com/shorts/sIoGu_4piHw?si=nJeRMeF6YVTkNkGq
+
+Welcome screen and starting the quiz
+
+Answering questions with immediate feedback
+
+Viewing final score and personalised message
+
+Using the review feature to see all correct answers
+
+gihub - https://github.com/SaneleDlamini77/Assignment2/edit/main/README.md
