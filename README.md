@@ -1,6 +1,6 @@
 # Assignment2
 #  Life Hack or Urban Myth? - Flashcard Quiz App
-
+https://youtube.com/shorts/sIoGu_4piHw?si=nJeRMeF6YVTkNkGq
 ## 📱 Project Overview
 
 **Life Hack or Urban Myth?** is an interactive Android quiz application that helps users distinguish between genuine life hacks and common urban myths. The app presents 8 questions where users must decide if a statement is a real life hack or just a myth, providing immediate feedback and explanations.
